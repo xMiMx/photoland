@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+@media screen and (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Saira', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        overflow-x: hidden;
+        text-decoration: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+   
+    #main-container {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        overflow-x: hidden;
+        position: relative;
+    }
+    #photo-container {
+        width: 100%;
+        overflow: visible;
+        height: auto;
+        margin-top: 35vh;
+    }
+    #photo #title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.428);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3vh;
+    }
+    #photo #add {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: -5vw;
+        top: -2vh;
+        border-radius: 50%;
+        background-color: white;
+        border: 6px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+    }
+    #photo {
+        width: 80%;
+        height: 30vh;
+        overflow: visible;
+        position: relative;
+        -webkit-box-shadow: 2px 15px 29px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 15px 29px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 15px 29px 0px rgba(0, 0, 0, 0.75);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+    }
+    #photo img {
+        width: 80vw;
+        height: 30vh;
+    }
+    #logo {
+        position: absolute;
+        top: 4vh;
+        left: 8vw;
+        width: min(100vw, 120px);
+    }
+    #header {
+        width: 200%;
+        height: 35vh;
+        background-color: black;
+        transform: rotate(150deg);
+        position: absolute;
+        left: -70vw;
+        top: -10vh;
+    }
+    #menu-icon {
+        position: absolute;
+        right: 5vw;
+        top: 7vh;
+        background-color: rgb(255, 255, 255);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+    #menu i {
+        font-size: 6vh;
+    }
+    #menu {
+        position: absolute;
+        right: 0vw;
+        top: -200vh;
+        width: 60%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        transition: 0.8s;
+    }
+    #cont-container {
+        width: 100%;
+    }
+    .content {
+        width: 80%;
+        height: 4vh;
+        border-bottom: 3px white solid;
+        color: white;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10vh;
+        font-size: 3vh;
+    }
+    #klik {
+        display: none;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .meni {
+        width: 40px;
+        cursor: pointer;
+    }
+    .meni .line,
+    .meni:before,
+    .meni:after {
+        height: 3px;
+        display: block;
+        background-color: black;
+        content: "";
+        margin: 9px 0;
+        transition: all 0.3s;
+    }
+    .meni.active:before {
+        transform: translateY(12px) rotate(225deg);
+    }
+    .meni.active .line {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    .meni.active:after {
+        transform: translateY(-12px) rotate(-225deg);
+    }
+}
